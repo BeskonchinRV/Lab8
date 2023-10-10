@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link>
+  <title>Цвет фона</title>
+</head>
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 1;
+    background-size: cover;
+    z-index: -1;
+  }
+  .text-shade{
+    text-shadow: 7px 7px 2px gold;
+    color: blue;
+    font-size: 30px;
+  }
+</style>
+<body>
+<header class="text-shade">
+  <h1>2 задание</h1>
+  <a href="1.html">
+    <p>Страница раз</p>
+  </a>
+  <a href="2.html">
+    <p>Страница два</p>
+  </a>
+  <a href="3.html">
+    <p>Страница три</p>
+  </a>
+</header>
+</body>
+</html>

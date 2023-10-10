@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Прозрачность</title>
+</head>
+<style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(1.png);
+    opacity: 0.3;
+    background-size: cover;
+    z-index: -1;
+  }
+  .text-shade{
+    text-shadow: 1px 1px 2px fuchsia;
+    color: #4CAF50;
+    font-size: 30px;
+  }
+</style>
+<body>
+<header class="text-shade">
+  <h1>1 задание</h1>
+<a href="1.html">
+  <p>Страница раз</p>
+</a>
+  <a href="2.html">
+    <p>Страница два</p>
+  </a>
+  <a href="3.html">
+    <p>Страница три</p>
+  </a>
+</header>
+</body>
+</html>
